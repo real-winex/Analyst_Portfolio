@@ -1,0 +1,14 @@
+# Write your program here
+height = float(input("Enter the height from which the ball is dropped: "))
+bounciness = float(input("Enter the bouncieness index of the ball: "))
+bounces = int(input("Enter the number of times the ball is allowed to continue bouncing: "))
+
+total_distance = height 
+
+for eachPass in range(bounces):
+    height *= bounciness
+    total_distance += 2 * height
+
+total_distance -= height
+
+print("Total distance traveled is: {} units".format(total_distance))
