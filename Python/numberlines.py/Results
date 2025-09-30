@@ -1,0 +1,21 @@
+# Write your program here
+#inputs
+input_file = input("Enter the name of the input file: ")
+output_file = input("Enter the name of the output file: ")
+
+#open & read files 
+f_in = open(input_file, 'r')
+f_out = open(output_file, 'w')
+
+line_number = 1
+
+#loop for reading & writing
+for line in f_in:
+    f_out.write(f"{line_number:4}> {line}")
+    line_number += 1
+
+# close files 
+f_in.close()
+f_out.close()
+
+print(f"Numbered lines have been put here: {output_file}.")
