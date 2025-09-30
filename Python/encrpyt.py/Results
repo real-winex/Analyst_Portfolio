@@ -1,0 +1,18 @@
+
+# Write your program here
+character = input("Enter plainText here: ")
+distance = int(input("Enter distance value here: "))
+code = ""
+
+for ch in character:
+    ordvalue = ord(ch)
+    ciphervalue = ordvalue + distance
+
+    if ciphervalue > 127:
+        ciphervalue = ciphervalue - 128
+    elif ciphervalue < 0:
+        ciphervalue = 128 + ciphervalue 
+
+    code += chr(ciphervalue)
+
+print("Encrypted text:", code)
