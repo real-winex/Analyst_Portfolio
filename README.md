@@ -8,3 +8,6 @@ My technical toolkit includes:
 - Python (currently learning) for scalable data workflows and automation
 
 I bring hands-on experience in data collection, cleaning, and analysis—paired with an entrepreneurial mindset that prioritizes ROI, optimization, and real-world impact. This portfolio showcases my analytical projects, dashboards, and tools designed to solve business problems and drive smarter decisions.
+
+
+LinkedIn: www.linkedin.com/in/weinsten-ex-470555323
