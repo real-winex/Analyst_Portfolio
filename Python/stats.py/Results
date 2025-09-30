@@ -1,0 +1,25 @@
+# Write your program here
+
+num_list = []
+num_list = (input("Input list of numbers seperated by commas: "))
+num_list = [int(x) for x in num_list.split(",")]
+
+#function that compute the median and mode of a set of numbers, 
+import statistics 
+#median
+median = statistics.median(num_list)
+#mode w number counter 
+frequency = {x: num_list.count(x) for x in set(num_list)}
+if len(set(frequency.values())) == 1:
+    mode = print("0")
+else: 
+    mode = max(frequency, key=frequency.get)
+#Also include a function named mean, which computes the average of a set of numbers. 
+    mean = statistics.mean(num_list)
+print("Mean: ",mean)
+print("Median: ",median)
+print("Mode: ",mode)
+
+#Each function should return 0 if the list is empty. 
+
+#Include a main function that tests the three statistical functions with a given list. 
