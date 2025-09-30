@@ -1,0 +1,36 @@
+# Write your program here
+# prompting for names
+file1 = input("Name of first text file: ")
+file2 = input("Name of second text file: ")
+
+# open both files 
+f1 = open(file1, 'r')
+f2 = open(file2, 'r')
+
+# truth & line number
+same = True
+
+# reading files w loop
+while True:
+    line1 = f1.readline()
+    line2 = f2.readline()
+
+    if not line1 and not line2:
+        break
+
+    # comparing the lines
+    if line1 != line2:
+        output = ['No and mismatched lines', 
+        f'File1: {line1.strip()}', 
+        f'File2: {line2.strip()}']
+
+        print(output)
+        same = False
+        break 
+    
+if same:
+    print("Yes")
+
+# close files
+f1.close()
+f2.close()
