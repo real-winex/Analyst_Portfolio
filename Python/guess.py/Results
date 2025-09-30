@@ -1,0 +1,37 @@
+# Write your program here
+# TKTK: Add started code here.
+
+import random 
+
+data1 = int(input("Enter the smaller number: "))
+data2 = int(input("Enter the larger number: "))
+
+attempts = 0 
+
+while True:
+
+    if data1 > data2:
+        print("I'm out of guesses, and you cheated!")
+        break
+    if data1 == data2:
+        print("I'm out of guesses, and you cheated!")
+        break
+        
+    guess = random.randint(data1,data2)
+    attempts += 1
+    print("Your number is:", guess , end=" ")
+    
+    response = input("\nEnter =, <, or >: ")
+
+    if response == "=":
+        print("Horray, I've got it in {} tries!".format(attempts))
+        break
+    elif response == "<":
+        data2 = guess - 1
+    elif response == ">":
+        data1 = guess + 1
+    
+    else: 
+        print("Invalid input. Enter '=', '<', or '>'. ")
+        attempts -= 1
+        continue
