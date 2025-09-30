@@ -1,0 +1,9 @@
+# Write your program here
+side_a = int(input("Input side A of triangle: "))
+side_b = int(input("Input side B of triangle: "))
+side_c = int(input("Input side C of triangle: "))
+
+if side_a**2 + side_b**2 == side_c**2:
+    print("The triangle is a right triangle")
+else:
+    print("The triangle is not a right triangle")
