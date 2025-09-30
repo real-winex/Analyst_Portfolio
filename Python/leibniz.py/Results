@@ -1,0 +1,11 @@
+# Write your program here
+def leibniz_pi(iterations):
+    pi_estimate = 0.0
+    for it in range(iterations):
+        pi_estimate += ((-1.0) ** it) / (2.0 * it + 1.0)
+    return 4.0 * pi_estimate
+
+num_iterations = int(input("Enter the number of iterations: "))
+approx_pi = leibniz_pi(num_iterations)
+
+print(f"Approximation of pi after {num_iterations} iterations: {approx_pi:.10f}")
