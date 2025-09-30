@@ -1,0 +1,10 @@
+# Write your program here
+def gcd(a,b):
+    while b:
+        a, b =b, a % b
+    return a
+
+Sn = int(input("Enter the smaller number: "))
+Ln = int(input("Enter the larger number: "))
+
+print(f"The greatest common divisor is {gcd(Sn,Ln)}")
