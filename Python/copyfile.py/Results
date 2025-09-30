@@ -1,0 +1,15 @@
+# Write your program here
+
+#asking user for both files
+file1 = input("Name of text file to be copied: ")
+file2 = input("Text file to be copied too: ")
+
+#opening both files
+with open(file1, 'r') as source, open(file2, 'w') as copy:
+
+#setting up loop 
+    for line in source:
+        copy.write(line)
+
+#user end message
+print("Copy file task is complete")
