@@ -1,0 +1,13 @@
+# Write your program here
+inP = int(input("  Enter the initial number of organisms: "))
+ROG = int(input("Enter the rate of growth [a real number > 1]: "))
+RHours = int(input("Enter the number of hours to achieve the rate of growth: "))
+THours = int(input("Enter the total hours of growth: "))
+
+P = inP
+time = THours // RHours
+
+for pop in range(time):
+    P *= ROG
+    
+print(f"The total population is {P}")
