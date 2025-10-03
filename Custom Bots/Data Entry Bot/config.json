@@ -1,0 +1,8 @@
+{
+    "required_columns": ["name", "email", "phone"],
+    "column_mapping": {
+        "full_name": "name",
+        "email_address": "email",
+        "phone_number": "phone"
+    }
+} 
